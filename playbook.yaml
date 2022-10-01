@@ -1,14 +1,12 @@
--
-  name: play1
+- name: play1
   hosts: all
   tasks:
     - name: pinging 1
       ping:
     - name: pinging 2
-      ping
+      ping:
 
-- 
-  name: play2
+- name: play2
   hosts: right
   tasks:
     - name: pinging
