@@ -1,0 +1,17 @@
+- 
+  name: play1
+  hosts: right
+  become: true
+  tasks: 
+    - name: update
+      apt: name=nginx state=latest
+      when: ansible_os_family == "Debian"
+
+-
+  name: play2
+  hosts: right
+  become: true
+  tasks:
+    - name: install ngnix
+      apt: name=nginx state=latest
+      when: ansible_os_family == "Redhat"
