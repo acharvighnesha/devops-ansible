@@ -1,0 +1,18 @@
+- 
+  name: play1
+  hosts: right
+  become: true
+  gather_facts: false
+  vars:
+    testnames: Hello World
+    varnames:
+      - Vignesh
+      - C34
+      - Welcome
+  tasks: 
+    - name: update1
+      command: 'echo {{ item }}'
+      with_items: '{{varnames}}'
+
+    - name: update2
+      command: 'echo {{testnames}}'
