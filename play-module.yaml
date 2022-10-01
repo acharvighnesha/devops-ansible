@@ -1,0 +1,8 @@
+- name: play1
+  hosts: right
+  become: true
+  tasks: 
+    - name: Install nginx & curl
+      apt:
+        - name=nginx state=latest
+        - name=curl state=latest
