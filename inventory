@@ -1,0 +1,7 @@
+[wrong]
+3.95.134.179 ansible_ssh_user=vignesh ansible_ssh_pass=Acharya@093
+3.95.134.179 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=
+
+[right]
+3.95.134.179 ansible_ssh_user=vignesh ansible_ssh_pass=Acharya@093
+3.95.134.179 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=
